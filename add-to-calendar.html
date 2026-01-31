@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>加入行事曆</title>
+  <title>加入婚禮行事曆</title>
 
   <style>
     body {
@@ -20,7 +20,7 @@
     }
 
     h1 {
-      font-size: 20px;
+      font-size: 22px;
       margin-bottom: 12px;
       color: #222;
     }
@@ -29,55 +29,78 @@
       font-size: 15px;
       color: #555;
       margin-bottom: 28px;
-      line-height: 1.6;
+      line-height: 1.7;
     }
 
-    .calendar-btn {
+    .btn {
       display: block;
       width: 100%;
       padding: 18px 0;
-      font-size: 18px;
+      font-size: 17px;
       font-weight: 600;
-      background: linear-gradient(135deg, #0a66c2, #3b82f6);
-      color: #fff;
       text-decoration: none;
       border-radius: 14px;
-      box-shadow: 0 6px 16px rgba(10, 102, 194, 0.25);
+      margin-bottom: 14px;
       transition: transform 0.15s ease, box-shadow 0.15s ease;
       -webkit-tap-highlight-color: transparent;
     }
 
-    .calendar-btn:active {
+    .btn:active {
       transform: scale(0.97);
-      box-shadow: 0 4px 10px rgba(10, 102, 194, 0.35);
+    }
+
+    .btn-apple {
+      background: linear-gradient(135deg, #0a66c2, #3b82f6);
+      color: #fff;
+      box-shadow: 0 6px 16px rgba(10, 102, 194, 0.25);
+    }
+
+    .btn-google {
+      background: #ffffff;
+      color: #1f2937;
+      border: 1px solid #d1d5db;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
     }
 
     .hint {
-      margin-top: 16px;
+      margin-top: 18px;
       font-size: 13px;
       color: #888;
+      line-height: 1.6;
     }
   </style>
 </head>
 
 <body>
   <div class="container">
-    <!-- <h1>加入行事曆</h1> -->
+    <h1>✨ 把這一天留給我們</h1>
     <p>
-      點擊下方按鈕，<br>
-      即可把日期時間加入你的行事曆 💕
+      林丞斌 & 劉宜雯 的婚禮即將到來，<br>
+      輕輕一點，把重要時刻加入你的行事曆 💕
     </p>
 
+    <!-- Apple / 通用行事曆 -->
     <a
       href="./wedding.ics"
       download
-      class="calendar-btn"
+      class="btn btn-apple"
     >
-      📅 加入行事曆
+      📅 加入手機／電腦行事曆
+    </a>
+
+    <!-- Google Calendar -->
+    <a
+      href="https://www.google.com/calendar/render?action=TEMPLATE&text=林丞斌+%26+劉宜雯+結婚典禮&dates=20261101T114500/20261101T150000&location=台中雅園新潮&details=林劉府婚禮出席"
+      target="_blank"
+      rel="noopener"
+      class="btn btn-google"
+    >
+      🗓️ 加入 Google 行事曆
     </a>
 
     <div class="hint">
-      （支援 iPhone / Android / 電腦）
+      📱 iPhone / Android / Google 帳號皆可使用<br>
+      加入後會自動提醒，不怕錯過這一天
     </div>
   </div>
 </body>
